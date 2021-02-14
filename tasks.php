@@ -1,7 +1,9 @@
 <?php 
     /*******TASK1*******/
-    $metn = "Bu cumlede tam-tamina alti soz var.";
-	$uzunluq = 0;
+    $metn = "   Bu cumlede tam-tamina alti soz var.   ";
+    $metn = trim($metn);
+    $metn =  preg_replace('/\s+/', ' ', $metn);
+    $uzunluq = 0;
     $sayan  = 0;
     $i = 0;
 
@@ -26,9 +28,12 @@
 
     /*******TASK2*******/
     echo "<br><strong>TASK2:</strong><br>";
-    $metn2 = "bu birinci. bu ikinci cumle. bu ucuncu cumle.bu dorduncu cumle.bu besinci cumle. bu altinci cumle";
+    $metn2 = "bu birinci.    bu ikinci cumle. bu ucuncu cumle.bu dorduncu cumle.         bu besinci cumle.    bu altinci cumle";
+    $metn2 = trim($metn2);
+    $metn2 =  preg_replace('/\s+/', ' ', $metn2);
     echo "<em>Evvelki hali:</em>".$metn2."<br>";
     $metn2 = ucfirst($metn2);
+
     $length = 0;
 
     while (isset($metn2[$length])) {
