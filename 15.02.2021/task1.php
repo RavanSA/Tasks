@@ -3,7 +3,7 @@
       $arr = [];
       $herf =  "";
 
-	  for ( $i = 0, $j = 0; isset( $metn[ $j ] ) ; $j++ ) {
+      for ( $i = 0, $j = 0; isset( $metn[ $j ] ) ; $j++ ) {
 
         if ( $metn[ $j ] != $simvol ) {
           $herf .= $metn[ $j ]; 
