@@ -10,7 +10,7 @@
 		"Istanbul"
 		);
 		
-	 for ( $i=0 ; $i < count( $seherler ); $i++ ) {
+     for ( $i=0 ; $i < count( $seherler ); $i++ ) {
 	    if ( strtolower( $seherler[ $i ] ) == strtolower( $seher ) ) {
 		   $movcuddur = "Netice Tapildi";
 			break;
